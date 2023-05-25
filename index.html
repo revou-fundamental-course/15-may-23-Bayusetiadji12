@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Katik <small>Kalkulator Matematik</small></h1> 			
+    </div>			
+    <div class="container">
+        <div class="homepage">
+            <div class="center">
+                <h2>Welcome to Katik</h2>
+                <p>Hai Sobat, Selamat datang di Katik :]
+                <br/>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+            </div>
+        <main>
+            <div class="card">
+                <div class="figure">
+                    <h2>Luas Persegi</h2>
+                </div>
+                <div class="formula-description">
+                    <p class="center"><img src="assets/persegi.jpg" alt="Luas Persegi"></p>
+                    <p>Rumus Luas Persegi yaitu :</p>
+                    <p class="center"><strong>L = S x S</strong></p>
+                    <p >Di mana :<br/>L = Luas<br/>S = Sisi</p>
+                </div>
+                <hr>
+                <div class="input-output">
+                    <h3>Hitung Luas Persegi</h3>
+                    <input  type="text" type="text" id="sisi-luas">
+
+                    <p class="result-luas" id="rumus-luas"></p>
+                    <p class="result-luas" id="perhitungan-luas"></p>
+                    <p class="result-luas"><span id="output-luas"></span></p>
+
+                    <input type="submit" name="hitung-luas" value="Hitung" onclick="hitungluas()">
+                    <p>
+                        <input type="reset" name="reset-luas" value="Reset" onclick="resetluas()">
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="figure">
+                    <h2>Keliling Persegi</h2>
+                </div>
+                <div class="formula-description">
+                    <p class="center"><img src="assets/persegi.jpg" alt="keliling Persegi"></p>
+                    <p>Rumus keliling Persegi yaitu :</p>
+                    <p class="center"><strong>K = 4 x S</strong></p>
+                    <p>Di mana :<br/>K = Keliling<br/>S = Sisi</p>
+                </div>
+                <hr>
+                <div class="input-output">
+                    <h3>Hitung keliling Persegi</h3>
+                    <input type="text" id="sisi-keliling" name="sisi-keliling" >
+
+                    <p class="result-keliling"><span id="output-keliling"></span></p>
+
+                    <input type="submit" name="hitung-keliling" value="Hitung" onclick="hitungkeliling()">
+                    <p>
+                        <input type="reset" name="reset-keliling" value="Reset" onclick="resetkeliling()">     
+                    </p>
+                </div>
+        </main>
+        </div>
+    </div>
+    <footer>
+        <p>@ Bayu Setiadji</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
